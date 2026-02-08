@@ -20,7 +20,7 @@ def download_music(playlist):
     subprocess.run([
         sys.executable,
         "-m", "yt_dlp",
-        "--no-playlist",
+        "--no-playlist", # para el file settings lo mas probable
         "-x",
         "--audio-format", "mp3",
         "--audio-quality", "0",
